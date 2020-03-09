@@ -5,7 +5,7 @@ set -e
 apt-get update -y
 apt-get dist-upgrade -y
 
-apt-get install curl gcc g++ git make ninja-build libclang-dev -y
+apt-get install curl gcc g++ git make ninja-build libclang-dev pkg-config -y
 
 curl -L https://github.com/Kitware/CMake/releases/download/v3.17.0-rc2/cmake-3.17.0-rc2-Linux-x86_64.sh -o cm.sh
 bash cm.sh --skip-license --exclude-subdir --prefix=/usr/

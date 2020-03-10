@@ -12,7 +12,7 @@ bash cm.sh --skip-license --exclude-subdir --prefix=/usr/
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain none --profile minimal -y
 
-source /root/.cargo/env
+source $HOME/.cargo/env
 
 rustup toolchain install nightly-2020-02-05
 
